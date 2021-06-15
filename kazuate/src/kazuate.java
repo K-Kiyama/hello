@@ -24,7 +24,7 @@ public class kazuate {
         Random rand = new Random();
         System.out.println("=====数当てゲーム=====");
 
-        int ans = rand.nextInt(90) + 10; //答えの数字
+        int ans = rand.nextInt(90) + 10; //答えの数字をランダム生成
 
         for(int i=0;i<5;i++){
            Scanner scan = new Scanner(System.in);
@@ -39,7 +39,7 @@ public class kazuate {
             else if(ans < num){
                 System.out.println("答えより大きい数字です。");
                 if(Math.abs(ans - num) >= 20){
-                    System.out.println("20以上離れています。");
+                    System.out.println("答えと20以上離れています。");
                 }
             }
             else if(ans > num){
